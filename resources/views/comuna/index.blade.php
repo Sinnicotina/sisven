@@ -27,7 +27,7 @@
                 <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                     <div class="p-6 text-gray-900">
                         <a href="{{ route('comunas.create') }}"
-                            class="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded ml-2">Add</a>
+                            class="btn btn-primary">Add</a>
                         <table class="table">
                             <thead>
                                 <tr>
@@ -45,7 +45,7 @@
                                         <td>{{ $comuna->muni_nomb }}</td>
                                         <td>
                                             <a href="{{ route('comunas.edit', ['comuna' => $comuna->comu_codi]) }}"
-                                                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                                                class="btn btn-primary">
                                                 Edit </a></li>
     
     
