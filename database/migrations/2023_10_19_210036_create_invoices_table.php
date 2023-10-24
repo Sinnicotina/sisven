@@ -14,15 +14,15 @@ return new class extends Migration
         Schema::create('invoices', function (Blueprint $table) {
             $table->id();
             $table->integer('number')->unique();
-            $table->unsignedBigInteger('customer_id');
+            //$table->unsignedBigInteger('customer_id');
             
             $table->date('date');
-            $table->unsignedBigInteger('pay_mode_id');
+            //$table->unsignedBigInteger('pay_mode_id');
             
             $table->timestamps();
 
-            $table->foreign('customer_id')->references('id')->on('customers');
-            $table->foreign('pay_mode_id')->references('id')->on('pay_mode');
+            //$table->foreign('customer_id')->references('id')->on('customers');
+            //$table->foreign('pay_mode_id')->references('id')->on('pay_mode');
         });
     }
 
